@@ -3,7 +3,10 @@ pragma solidity ^0.8.18;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-# import "hardhat/console.sol";
+// Replace this import
+// import "hardhat/console.sol";
+// Add this import instead
+import "forge-std/console.sol";
 
 contract MintableERC721 is ERC721URIStorage {
     // Variables
