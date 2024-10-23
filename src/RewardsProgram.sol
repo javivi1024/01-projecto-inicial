@@ -2,7 +2,7 @@
 pragma solidity ^0.8.18;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "hardhat/console.sol";
+# import "hardhat/console.sol";
 
 contract MintableERC20 is ERC20 {
     // Variables

@@ -3,4 +3,16 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+remappings = ["@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/"]
+
+# HowTo OpenZeppelin Defender integration
+# Configure your foundry.toml to enable ffi, ast, build info and storage layout:
+# https://docs.openzeppelin.com/upgrades-plugins/1.x/foundry-defender
+
+ffi = true
+ast = true
+build_info = true
+extra_output = ["storageLayout"]
+
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
