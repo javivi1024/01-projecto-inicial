@@ -15,4 +15,14 @@ build_info = true
 extra_output = ["storageLayout"]
 
 
+# Para que Foundry acceda a las variables en el archivo .env,
+# debes hacer algunos ajustes en tu script de despliegue o en tu configuración.
+# a) Configurar Foundry para leer el .env
+# En tu archivo foundry.toml (el archivo de configuración de Foundry), puedes acceder a
+# las variables de entorno usando la sintaxis ${VARIABLE_NAME}.
+
+# API de Moonbase Alpha
+rpc_url = "https://rpc.api.moonbase.moonbeam.network"
+private_key = "${DEPLOYER_PRIVATE_KEY}"
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
