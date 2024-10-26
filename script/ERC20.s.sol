@@ -1,8 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-import "forge-std/Script.sol";
-import "../src/ERC20.sol";
+import {Script, console} from "forge-std/Script.sol";
+import {Factory} from "../src/ERC20.sol";
+//import "forge-std/Script.sol";
+// import "../src/ERC20.sol";
 // import "../src/MintableERC20.sol";  // Asegúrate de que la ruta sea correcta.
 // import "../src/Rewards.sol";        // Asegúrate de que la ruta sea correcta.
 // import "../src/Factory.sol";        // Asegúrate de que la ruta sea correcta.

@@ -14,6 +14,8 @@ ast = true
 build_info = true
 extra_output = ["storageLayout"]
 
+# Input your custom or default config options here
+extra_output_files = ["metadata"]
 
 # Para que Foundry acceda a las variables en el archivo .env,
 # debes hacer algunos ajustes en tu script de despliegue o en tu configuración.
@@ -21,8 +23,17 @@ extra_output = ["storageLayout"]
 # En tu archivo foundry.toml (el archivo de configuración de Foundry), puedes acceder a
 # las variables de entorno usando la sintaxis ${VARIABLE_NAME}.
 
-# API de Moonbase Alpha
-rpc_url = "https://rpc.api.moonbase.moonbeam.network"
 private_key = "${DEPLOYER_PRIVATE_KEY}"
+
+[rpc_endpoints]
+rpc_url = "https://rpc.api.moonbase.moonbeam.network"
+moonbase_alpha = "https://rpc.api.moonbase.moonbeam.network"
+moonbeam = "INSERT_RPC_API_ENDPOINT"
+
+[etherscan]
+moonbase_alpha = { key = "${MOONSCAN_API_KEY}" }
+moonbeam = { key = "${MOONSCAN_API_KEY}" }
+
+
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
