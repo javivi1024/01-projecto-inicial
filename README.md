@@ -64,3 +64,8 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+### Create with verify
+```shell
+$ forge create --rpc-url moonbase_alpha --private-key $DEPLOYER_PRIVATE_KEY_7959 src/ERC20.sol:Factory --etherscan-api-key $MOONSCAN_API_KEY --verify
+```
