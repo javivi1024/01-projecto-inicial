@@ -24,6 +24,8 @@ extra_output_files = ["metadata"]
 # las variables de entorno usando la sintaxis ${VARIABLE_NAME}.
 
 private_key = "${DEPLOYER_PRIVATE_KEY}"
+private_key_7959 = "${DEPLOYER_PRIVATE_KEY_7959}"
+
 
 [rpc_endpoints]
 rpc_url = "https://rpc.api.moonbase.moonbeam.network"
@@ -33,7 +35,6 @@ moonbeam = "INSERT_RPC_API_ENDPOINT"
 [etherscan]
 moonbase_alpha = { key = "${MOONSCAN_API_KEY}" }
 moonbeam = { key = "${MOONSCAN_API_KEY}" }
-
 
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
